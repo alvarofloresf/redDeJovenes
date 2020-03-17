@@ -19,7 +19,8 @@ import { EditHistoriaVidaVideoComponent } from './components/historiasVida/histo
 import { AddHistoriaVidaVideoComponent } from './components/historiasVida/historia-vida-video/historiaVidaVideo/add-historia-vida-video/add-historia-vida-video.component';
 import { ShowHistoriaVidaVideoComponent } from './components/historiasVida/historia-vida-video/historiaVidaVideo/show-historia-vida-video/show-historia-vida-video.component';
 
-import {HistoriaVidaTextoService} from './services/historia-vida-texto.service'
+import {HistoriaVidaTextoService} from './services/historia-vida-texto.service';
+import { NavbarComponent } from './components/navbar/navbar.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import {HistoriaVidaTextoService} from './services/historia-vida-texto.service'
     HistoriaVidaVideoComponent,
     EditHistoriaVidaVideoComponent,
     AddHistoriaVidaVideoComponent,
-    ShowHistoriaVidaVideoComponent
+    ShowHistoriaVidaVideoComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,14 @@
-<h2>
-    MISION</h2>
-
-<hr/>
+<div class="container objetivo">
+    <h2>Objetivos</h2>
+</div>
 <div *ngIf="objetivo">
     <div>
-        <label><b>CONTENIDO: </b></label> {{objetivo.contenido}}
+        <label><b>Contenido: </b></label> {{objetivo.contenido}}
     </div>
-
 </div>
-
 <br>
 <br>
-<button (click)="edit_objetivo(objetivo)" class="btn btn-danger">EDITAR</button><br>
+<div class="container botton-objetivo">
+    <button (click)="edit_objetivo(objetivo)" class="btn btn-success">Editar</button>
+</div>
+<br>

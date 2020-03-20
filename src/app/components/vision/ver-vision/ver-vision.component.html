@@ -1,0 +1,14 @@
+<h2>
+    VISION</h2>
+
+<hr/>
+<div *ngIf="vision">
+    <div>
+        <label><b>CONTENIDO: </b></label> {{vision.contenido}}
+    </div>
+
+</div>
+
+<br>
+<br>
+<button (click)="edit_vision(vision)" class="btn btn-danger">EDITAR</button><br>

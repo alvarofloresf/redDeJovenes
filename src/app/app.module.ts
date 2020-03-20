@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
@@ -18,10 +20,20 @@ import { HistoriaVidaVideoComponent } from './components/historiasVida/historia-
 import { EditHistoriaVidaVideoComponent } from './components/historiasVida/historia-vida-video/historiaVidaVideo/edit-historia-vida-video/edit-historia-vida-video.component';
 import { AddHistoriaVidaVideoComponent } from './components/historiasVida/historia-vida-video/historiaVidaVideo/add-historia-vida-video/add-historia-vida-video.component';
 import { ShowHistoriaVidaVideoComponent } from './components/historiasVida/historia-vida-video/historiaVidaVideo/show-historia-vida-video/show-historia-vida-video.component';
+import {HttpClientModule} from '@angular/common/http';
 
+import {MisionService} from './services/mision.service';
 import {HistoriaVidaTextoService} from './services/historia-vida-texto.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { VerMisionComponent } from './components/mision/ver-mision/ver-mision.component';
+import { EditMisionComponent } from './components/mision/edit-mision/edit-mision.component';
+import { VerVisionComponent } from './components/vision/ver-vision/ver-vision.component';
+import { EditVisionComponent } from './components/vision/edit-vision/edit-vision.component';
+import { VerObjetivoComponent } from './components/objetivo/ver-objetivo/ver-objetivo.component';
+import { EditObjetivoComponent } from './components/objetivo/edit-objetivo/edit-objetivo.component';
+
 
 @NgModule({
   declarations: [
@@ -40,13 +52,24 @@ import { FooterComponent } from './components/footer/footer.component';
     ShowHistoriaVidaVideoComponent,
     NavbarComponent,
     FooterComponent,
+    CarouselComponent,
+    VerMisionComponent,
+    EditMisionComponent,
+    VerVisionComponent,
+    EditVisionComponent,
+    VerObjetivoComponent,
+    EditObjetivoComponent
+
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [HistoriaVidaTextoService],
   bootstrap: [AppComponent]

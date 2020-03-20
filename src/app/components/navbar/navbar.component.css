@@ -3,6 +3,9 @@
     font-size: 120%;
 }
 
+.singin{
+    padding: 1px 5px;
+}
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {

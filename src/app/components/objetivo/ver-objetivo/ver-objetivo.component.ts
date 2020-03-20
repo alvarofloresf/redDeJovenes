@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ObjetivoService } from 'src/app/services/objetivo.service';
 import { Subscriber } from 'rxjs';
-import { Objetivos } from 'src/app/Models/Objetivos';
+import { Objetivos } from 'src/app/models/Objetivos';
 @Component({
   selector: 'app-ver-objetivo',
   templateUrl: './ver-objetivo.component.html',

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MisionService } from 'src/app/services/mision.service';
 import { Subscriber } from 'rxjs';
-import { Mision } from 'src/app/Models/Mision';
+import { Mision } from './models/Mision';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
 @Component({

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { VisionService } from 'src/app/services/vision.service';
 import { Subscriber } from 'rxjs';
-import { Vision } from 'src/app/Models/Vision';
+import { Vision } from 'src/app/models/Vision';
 @Component({
   selector: 'app-edit-vision',
   templateUrl: './edit-vision.component.html',

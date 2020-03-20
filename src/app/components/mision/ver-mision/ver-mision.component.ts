@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MisionService } from 'src/app/services/mision.service';
 import { Subscriber } from 'rxjs';
-import { Mision } from 'src/app/Models/Mision';
+import { Mision } from 'src/app/models/Mision';
 @Component({
   selector: 'app-ver-mision',
   templateUrl: './ver-mision.component.html',

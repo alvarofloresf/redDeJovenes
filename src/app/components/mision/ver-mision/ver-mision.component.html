@@ -1,14 +1,14 @@
-<h2>
-    MISION</h2>
-
-<hr/>
+<div class="container mision">
+    <h2>Mision</h2>
+</div>
 <div *ngIf="mision">
     <div>
-        <label><b>CONTENIDO: </b></label> {{mision.contenido}}
+        <label><b>Contenido: </b></label> {{mision.contenido}}
     </div>
-
 </div>
-
 <br>
 <br>
-<button (click)="edit_mision(mision)" class="btn btn-danger">EDITAR</button><br>
+<div class="container botton-mision">
+    <button (click)="edit_mision(mision)" class="btn btn-success">Editar</button>
+</div>
+<br>
